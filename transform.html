@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:300px;
+            height:100px;
+            background-color:rgb(167, 226, 250);
+            border:  1px solid black;
+            transition-property: all;
+            transition-duration: 1s;
+            padding: 5px;
+        }
+        .div1:hover{transform: translate(50px,50px);}
+        .div2:hover{transform: rotate(20deg);}
+        .div3:hover{transform: scale(2,3);}
+        .div4:hover{transform: scaleX(2);}
+        .div5:hover{transform: scaleY(2);}
+        .div6:hover{transform:skewx(20deg);}
+        .div7:hover{transform: skewy(20deg);}
+        .div8:hover{transform: skew(20deg,10deg);}
+    </style>
+</head>
+<body>
+    <h1>translate</h1>
+    <div class="div1">
+        Lorem ipsum dolor sit amet,consectetur adipisicing elit. Temporibus sequi, ea praesentium ipsum asperiores eaque fuga similique ullam.
+    </div><br>
+    <h1>rotate</h1>
+    <div class="div2">
+        The following example moves the element 50 pixels to the right, and 100 pixels down from its current position:
+    </div><br>
+    <h1>scale</h1>
+    <div style="margin: 50px;" class="div3">
+        The following example decreases the element to be half of its original width: 
+    </div><br>
+    <h1>scaleX</h1>
+    <div class="div4">
+        The following example moves the element 50 pixels to the right, and 100 pixels down from its current position
+    </div><br>
+    <h1>scaleY</h1>
+    <div class="div5">
+        Lorem ipsum dolor sit amet,consectetur adipisicing elit. Temporibus sequi, ea praesentium ipsum asperiores eaque fuga similique ullam.
+    </div><br>
+    <h1>skewx</h1>
+    <div class="div6">
+        The following example skews the element 20 degrees along the Y-axis:
+    </div>
+    <h1>skewy</h1>
+    <div class="div7">
+        The following example skews the element 20 degrees along the Y-axis:
+    </div>
+    <h1>skew</h1>
+    <div class="div8">
+        The following example skews the element 20 degrees along the Y-axis:
+    </div>
+</body>
+</html>

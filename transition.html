@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="transition.css">
+    <title>CSS transitions</title>
+    <style>
+        body{
+            background: white;
+        }
+        .box{
+            background-color: rgb(50, 218, 230);
+            width: 300px;
+            height: 150px;
+            /* position: relative; */
+            margin: auto;
+            top: 200px;
+            transition-property: all;
+            transition-duration: 3s;
+        }
+        .box:hover{
+            background: red;
+            /* border-radius:50%; */
+            transform: rotatey(180deg);
+           box-shadow:  0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+        .button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+ transform: scaleY(3);
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+    <p style="padding:10px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni sequi debitis eos, tempore pariatur consequatur, id, natus officia recusandae quam incidunt iste veniam facere quibusdam voluptate praesentium atque illo? Et!</p></div>
+    <button class="button">
+      <span>animation </span>
+    </button>
+</body>
+</html>
