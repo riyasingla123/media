@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .parent{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    } .bannerimage{position: relative;}
+            .bannercontent{
+                position: absolute;
+                top:5px;
+            }
+    
+@media only screen and (max-width: 425px) {
+        body {
+          background-color: lightblue;
+        }  .parent{grid-template-columns: 1fr ;}
+      }
+      @media only screen and (max-width: 768px) and (min-width: 425px)  {
+        body {
+          background-color: rgb(36, 233, 141);
+        }  .parent{grid-template-columns: 1fr 1fr;}
+      }
+      @media only screen and  (max-width: 1440px) and (min-width: 768px)  {
+        body {
+          background-color: red;
+        }  .parent{grid-template-columns: 1fr 1fr 1fr 1fr;}
+      }
+      
+      </style>
+</head>
+<body>
+        <div class="parent">
+        <div class="bannerimage">
+            <img src="image/photorealistic-wooden-house-with-timber-structure.jpg" alt="" width="100%">
+        <div class="bannercontent">       
+             <span style="background-color: black;color: white;padding: 5px;">Summer House</span>
+        </div>
+        </div>
+        <div class="bannerimage">
+            <img src="image/3d-house-model-with-modern-architecture.jpg" alt="" width="100%">
+         <div class="bannercontent">       
+                <span style="background-color: black;color: white;padding: 5px;">Brick House</span>
+            </div>
+           </div>
+        <div class="bannerimage">
+            <img src="image/house5.jpg" alt="" width="100%">
+        <div class="bannercontent">
+            <span style="background-color: black;color: white;padding: 5px;">Renovated</span>
+        </div>
+        </div>
+        <div class="bannerimage">
+            <img src="image/house3.jpg" alt="" width="100%">
+            <div class="bannercontent">
+            <span style="background-color: black;color: white;padding: 5px;">Barn House</span></div>
+        </div>
+        <div class="bannerimage">
+            <img src="image/house4.jpg" alt="" width="100%">
+            <div class="bannercontent">
+                <span style="background-color: black;color: white;padding: 5px;">Summer House</span></div>
+        </div>
+        <div class="bannerimage">
+            <img src="image/house3.jpg" alt=""width="100%"> 
+            <div class="bannercontent">
+                <span style="background-color: black;color: white;padding: 5px;">Brick House</span></div>
+        </div>
+        <div class="bannerimage">
+            <img src="image/house5 (1).jpg" alt=""width="100%"> 
+            <div class="bannercontent">
+                <span style="background-color: black;color: white;padding: 5px;">Renovated</span></div>
+        </div>
+        <div class="bannerimage">
+            <img src="image/house4.jpg" alt=""width="100%">
+            <div class="bannercontent">
+                <span style="background-color: black;color: white;padding: 5px;">Barn House</span></div>
+        </div>
+           
+</body>
+</html>
